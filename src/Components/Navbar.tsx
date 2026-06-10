@@ -20,11 +20,11 @@ const Navbar = () => {
 
       <div className='hidden sm:flex'>
         <ul className='flex flex-row gap-6'>
-          <li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Home</li>
-          <li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>About Me</li>
-          <li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Projects</li>
-          <li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Services</li>
-          <li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Contact</li>
+          <a href='#home'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Home</li></a>
+          <a href='#about'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>About Me</li></a>
+          <a href='#projects'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Projects</li></a>
+          <a href='#services'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Services</li></a>
+          <a href='#contact'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Contact</li></a>
         </ul>
       </div>
 

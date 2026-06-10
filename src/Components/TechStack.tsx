@@ -1,8 +1,19 @@
+import { motion } from 'motion/react';
 import React from 'react'
 
+ 
+
 const TechStack = () => {
+
+  const skills = [
+    "Next js", "React js","Node js", "Express JS","Mongo DB" ," Tailwind CSS ","Javascript"," HTML 5 ","  CSS 3","Redux",
+    " JQuery", " GIT", "Threejs","Framer Motion"," Vite","Firebase", " C, c++",
+  ]
+
+
+ 
   return (
-    <section className='relative w-full py-12 overflow-hidden'>
+    <section className='relative w-full py-10 overflow-hidden'>
 
       <div className='relative z-10 max-w-6xl mx-auto h-full px-6 flex flex-col justify-center md:items-center gap-2'>
 
@@ -11,19 +22,19 @@ const TechStack = () => {
           
         </div>
 
-        <div className=' grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  justify-center gap-9 w-full p-7 text-zinc-400  '>
-            <div className='bg-slate-900 p-8 rounded-3xl min-h-[300px]'>
-              <h3 className='text-center '>Frontend</h3>
-              <ul>
-                <li>React js</li>
-                <li>Next js</li>
-              </ul>
-              
-            </div>
-            <div className='bg-slate-900 p-8 rounded-3xl min-h-[300px] '></div>
-            <div className='bg-slate-900 p-8 rounded-3xl min-h-[300px] '></div>
-          </div>
+        <div className='flex flex-wrap gap-4 justify-center max-w-4xl mx-auto pt-10'>
+          {
+            skills.map((skill) => (
+              <div key={skill} className=" rounded-2xl p-2 text-sm cursor-pointer  text-white hover:bg-orange-500 transition duration-200 ">
+                {skill}
+              </div>
+            ))
+          }
+        </div>
 
+
+
+        
       </div>
 
 

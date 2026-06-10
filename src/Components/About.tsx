@@ -4,7 +4,7 @@ import ScrollText from "./ScrollText";
 
 const About = () => {
   return (
-    <section className="relative w-full py-24 overflow-hidden">
+    <section id="about" className="relative w-full py-24 overflow-hidden">
       <div className="relative z-10 max-w-6xl mx-auto h-full px-6 flex flex-col justify-center md:items-center gap-2">
         <div className="space-y-2">
           <p className="text-orange-500 uppercase tracking-widest md:text-center">About Me</p>

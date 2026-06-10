@@ -4,7 +4,7 @@ import { fadeUp, staggerContainer } from "@/animations/varients";
 const Hero = () => {
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section id="home" className="relative w-full h-screen overflow-hidden">
 
 
      
@@ -29,7 +29,8 @@ const Hero = () => {
         <motion.div variants={fadeUp} initial="hidden" animate="visible" className="mt-8 flex gap-4">
 
           <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-xl text-white font-medium">
-            View Projects
+            Resume
+    
           </button>
 
           <button className="border border-white/20 hover:border-orange-500 transition px-6 py-3 rounded-xl text-white">
