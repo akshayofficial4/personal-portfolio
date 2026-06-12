@@ -1,12 +1,25 @@
 "use client";
 import { motion } from 'motion/react';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {  fadeIn, slideLeft } from "@/animations/varients";
 
 
 const Navbar = () => {
   
   const [ isOpen , setIsOpen ] = useState(false);
+  useEffect(() => {
+    
+    if(isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  
+    return () => {
+      document.body.style.overflow = "auto";
+    }
+  }, [isOpen])
+  
 
   return (
      <div className=" relative w-full">
