@@ -2,6 +2,7 @@ import About from "@/Components/About";
 import Hero from "@/Components/Hero";
 import Navbar from "@/Components/Navbar";
 import Projects from "@/Components/Projects";
+import Services from "@/Components/Services";
 import TechStack from "@/Components/TechStack";
 import Image from "next/image";
 
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <TechStack />
       <Projects />
+      <Services />
 
     </main>
   );

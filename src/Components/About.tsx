@@ -34,6 +34,7 @@ const About = () => {
               alt="Akshay Sunil"
               width={0}
               height={0}
+              loading="eager"
               sizes="100vw"
               className="
                       relative
