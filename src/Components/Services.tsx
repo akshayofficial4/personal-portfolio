@@ -25,7 +25,7 @@ const Services = () => {
   },
 ];
   return (
-    <section className='relative w-full py-24 overflow-hidden '>
+    <section id='services' className='relative w-full py-24 overflow-hidden '>
 
         <div className='relative z-10 max-w-6xl mx-auto px-6 flex flex-col justify-center md:items-center gap-2'>
 
@@ -46,20 +46,40 @@ const Services = () => {
 
             </div>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16'>
 
               {
                 services.map((service) => (
-                  <motion.div key={service.title} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className='group rounded-3xl border border-white/10 bg-zinc-900/40 backdrop-blur-sm p-8 hover:border-orange-500/40 hover:-translate-y-2 transition-all duration-300 mx-auto ' >
+                  <motion.div key={service.title} variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className='group rounded-3xl border border-white/10 bg-zinc-900/40 backdrop-blur-sm p-8 hover:border-orange-500/40 hover:-translate-y-2 transition-all duration-300  ' >
 
-                <div className='text-5xl mb-6 text-center'>
-                    {service.icon}
+                <div className='text-5xl mb-6 flex justify-center'>
+                     <div
+                        className="
+                          flex
+                          items-center
+                          justify-center
+                          text-center
+                          w-20
+                          h-20
+                          rounded-2xl
+                          bg-orange-500/10
+                          border
+                          border-orange-500/20
+                          text-5xl
+                          transition-all
+                          duration-300
+                          group-hover:scale-110
+                          group-hover:bg-orange-500/20
+                        "
+                      >
+                        {service.icon}
+                      </div>
                 </div>
 
-                <h3 className='text-2xl font-semibold mb-4 text-center'>{service.title}</h3>
+                <h3 className='text-2xl pt-3 font-semibold mb-4 text-center group-hover:text-orange-500 transition-all ease-in-out duration-100'>{service.title}</h3>
 
                   
-                    <p className="text-zinc-400 leading-7 text-center max-w-2xl">
+                    <p className="text-zinc-400 group-hover:text-white transition-colors duration-100 ease-in-out leading-7 text-center max-w-2xl">
                       {service.description}
                     </p>
                   
