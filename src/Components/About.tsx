@@ -1,26 +1,35 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 import ScrollText from "./ScrollText";
 import { fadeUp } from "@/animations/varients";
 
 const About = () => {
   return (
     <section id="about" className="relative w-full py-24 overflow-hidden">
-      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="relative z-10 max-w-6xl mx-auto h-full px-6 flex flex-col justify-center md:items-center gap-2">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="relative z-10 max-w-6xl mx-auto h-full px-6 flex flex-col justify-center md:items-center gap-2"
+      >
         <div className="space-y-2">
-          <p className="text-orange-500 uppercase tracking-widest md:text-center">About Me</p>
+          <p className="text-orange-500 uppercase tracking-widest md:text-center">
+            About Me
+          </p>
 
-          <h2 className="text-5xl font-bold mt-3">Building Digital Experiences</h2>
+          <h2 className="text-5xl font-bold mt-3">
+            Building Digital Experiences
+          </h2>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16 items-center mt-12 md:pl-12  ">
           <div className="space-y-6  ">
-
             <ScrollText
-                    className="text-zinc-400 leading-8 text-xl"
-                    text="
+              className="text-zinc-400 leading-8 text-xl"
+              text="
                     I'm Akshay Sunil, a Full Stack Developer passionate about building modern,
                     responsive, and scalable web applications using React.js, Next.js,
                     Node.js, and MongoDB. I enjoy turning ideas into intuitive digital
@@ -28,8 +37,7 @@ const About = () => {
                     performance, usability, and clean design. My goal is to create web
                     applications that not only look great but also solve real business
                     problems."
-              />
-            
+            />
           </div>
           <div className="flex justify-center lg:justify-center ">
             <Image

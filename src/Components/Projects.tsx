@@ -6,7 +6,6 @@ import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Image from "next/image";
 import { fadeUp } from "@/animations/varients";
 
-
 const Projects = () => {
   const [activeProject, setActiveProject] = useState<number | null>(null);
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -165,7 +164,13 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative w-full py-24 overflow-hidden">
-      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="max-w-6xl mx-auto px-6 ">
+      <motion.div
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        className="max-w-6xl mx-auto px-6 "
+      >
         <div className="mb-12">
           <p className="text-orange-500 uppercase tracking-widest md:text-center">
             Projects
@@ -303,7 +308,6 @@ const Projects = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             onClick={() => setShowAllProjects(false)}
-
             className="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center"
           >
             <motion.div
@@ -327,7 +331,9 @@ const Projects = () => {
                   All projects
                 </p>
 
-                <h2 className="text-4xl font-bold mt-4">Things I've Built</h2>
+                <h2 className="text-4xl font-bold mt-4">
+                  Things I&apos;ve Built
+                </h2>
 
                 <p className="text-zinc-400 mt-6">
                   A collection of full-stack and frontend projects showcasing my

@@ -78,12 +78,12 @@ const Contact = () => {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold mt-4">
-            Let's Build Something Amazing
+            Let&apos;s Build Something Amazing
           </h2>
 
           <p className="text-zinc-400 mt-6 leading-7 max-w-2xl mx-auto">
-            Have an idea, project, freelance opportunity, or job opening? I'd
-            love to hear from you and discuss how we can work together.
+            Have an idea, project, freelance opportunity, or job opening?
+            I&apos;d love to hear from you and discuss how we can work together.
           </p>
         </motion.div>
 
@@ -197,7 +197,6 @@ const Contact = () => {
         </motion.div>
 
         {/* Social Links */}
-                
 
         <div className="flex flex-wrap justify-center gap-6 mt-10 text-zinc-400">
           <a
