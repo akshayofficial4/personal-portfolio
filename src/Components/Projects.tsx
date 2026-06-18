@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import Image from "next/image";
+import { fadeUp } from "@/animations/varients";
+
 
 const Projects = () => {
   const [activeProject, setActiveProject] = useState<number | null>(null);
@@ -163,7 +165,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="relative w-full py-24 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6 ">
+      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="max-w-6xl mx-auto px-6 ">
         <div className="mb-12">
           <p className="text-orange-500 uppercase tracking-widest md:text-center">
             Projects
@@ -174,7 +176,7 @@ const Projects = () => {
           </h2>
         </div>
 
-        <div className="flex gap-4 h-auto md:min-h-[320] flex-col md:flex-row">
+        <div className="flex gap-4 h-auto md:min-h-[320px] flex-col md:flex-row">
           {featuredProjects.map((project) => (
             <motion.div
               key={project.id}
@@ -231,6 +233,7 @@ const Projects = () => {
                       src={project.image}
                       alt={project.title}
                       fill
+                      loading="eager"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       className="object-contain transition-transform duration-500 group-hover:scale-110"
                     />
@@ -290,7 +293,7 @@ const Projects = () => {
             Explore All Projects →
           </button>
         </div>
-      </div>
+      </motion.div>
 
       <AnimatePresence>
         {showAllProjects && (
@@ -300,6 +303,7 @@ const Projects = () => {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
             onClick={() => setShowAllProjects(false)}
+
             className="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center"
           >
             <motion.div
@@ -307,6 +311,7 @@ const Projects = () => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 80, scale: 0.95 }}
               transition={{ duration: 0.35 }}
+              data-lenis-prevent
               onClick={(e) => e.stopPropagation()}
               className="w-[90%] max-w-6xl h-[85vh] bg-zinc-950 rounded-3xl border border-white/10 p-8 relative overflow-y-auto "
             >

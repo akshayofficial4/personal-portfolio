@@ -33,11 +33,11 @@ const Navbar = () => {
 
       <div className='hidden sm:flex'>
         <ul className='flex flex-row gap-6'>
-          <a href='#home'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Home</li></a>
-          <a href='#about'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>About Me</li></a>
-          <a href='#projects'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Projects</li></a>
-          <a href='#services'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Services</li></a>
-          <a href='#contact'><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200'>Contact</li></a>
+          <a onClick={() => document.getElementById("home")?.scrollIntoView({behavior:"smooth",})  }><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200 cursor-pointer'>Home</li></a>
+          <a onClick={() => document.getElementById("about")?.scrollIntoView({behavior:"smooth",})  }><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200 cursor-pointer'>About Me</li></a>
+          <a onClick={() => document.getElementById("projects")?.scrollIntoView({behavior:"smooth",})  }><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200 cursor-pointer'>Projects</li></a>
+          <a onClick={() => document.getElementById("services")?.scrollIntoView({behavior:"smooth",})  }><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200 cursor-pointer'>Services</li></a>
+          <a onClick={() => document.getElementById("contact")?.scrollIntoView({behavior:"smooth",})  }><li className='hover:bg-orange-500  p-2 rounded-2xl transition duration-200 cursor-pointer'>Contact</li></a>
         </ul>
       </div>
 
@@ -55,15 +55,15 @@ const Navbar = () => {
     {/* MOBILE MENU */}
     {
       isOpen && (
-        <motion.div variants={slideLeft} initial="hidden" animate="visible" className="absolute top-full left-0 right-0 mt-1  bg-slate-900 backdrop-blur-xl p-4 h-screen text-3xl text-right sm:hidden ">
+        <motion.div variants={slideLeft} initial="hidden" animate="visible" className="absolute top-full left-0 right-0 mt-1 bg-slate-900 backdrop-blur-xl p-4 h-screen text-3xl text-right sm:hidden z-50 ">
 
           <ul className="flex flex-col gap-10">
 
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Projects</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <a href='#home' onClick={() => setIsOpen(!isOpen) }><li>Home</li></a>
+            <a href='#about' onClick={() => setIsOpen(!isOpen) }><li>About Me</li></a>
+            <a href='#projects' onClick={() => setIsOpen(!isOpen) }><li>Projects</li></a>
+            <a href='#services' onClick={() => setIsOpen(!isOpen) }><li>Services</li></a>
+            <a href='#contact' onClick={() => setIsOpen(!isOpen) }><li>Contact</li></a>
 
           </ul>
 

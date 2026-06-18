@@ -27,7 +27,7 @@ const Services = () => {
   return (
     <section id='services' className='relative w-full py-24 overflow-hidden '>
 
-        <div className='relative z-10 max-w-6xl mx-auto px-6 flex flex-col justify-center md:items-center gap-2'>
+        <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className='relative z-10 max-w-6xl mx-auto px-6 flex flex-col justify-center md:items-center gap-2'>
 
             <div className="space-y-2 md:text-center">
 
@@ -91,7 +91,7 @@ const Services = () => {
 
             </div>
 
-        </div>
+        </motion.div>
 
     </section>
   )

@@ -1,11 +1,14 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import {motion} from "framer-motion"
 import ScrollText from "./ScrollText";
+import { fadeUp } from "@/animations/varients";
 
 const About = () => {
   return (
     <section id="about" className="relative w-full py-24 overflow-hidden">
-      <div className="relative z-10 max-w-6xl mx-auto h-full px-6 flex flex-col justify-center md:items-center gap-2">
+      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="relative z-10 max-w-6xl mx-auto h-full px-6 flex flex-col justify-center md:items-center gap-2">
         <div className="space-y-2">
           <p className="text-orange-500 uppercase tracking-widest md:text-center">About Me</p>
 
@@ -49,7 +52,7 @@ const About = () => {
             />
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

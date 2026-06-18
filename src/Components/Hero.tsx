@@ -28,15 +28,20 @@ const Hero = () => {
 
         <motion.div variants={fadeUp} initial="hidden" animate="visible" className="mt-8 flex gap-4">
 
-          <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-xl text-white font-medium">
+          <a href="/Akshay-Sunil_Fullstack_developer_resume.pdf" download>
+            <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded-xl text-white font-medium">
             Resume
     
           </button>
+          </a>
 
-          <button className="border border-white/20 hover:border-orange-500 transition px-6 py-3 rounded-xl text-white">
-            Contact Me
-          </button>
+          <a href="#contact">
+            <button
+              className="border border-white/20 hover:border-orange-500 transition px-6 py-3 rounded-xl text-white">
+                Contact Me
+            </button>
 
+          </a>
         </motion.div>
 
       </motion.div>

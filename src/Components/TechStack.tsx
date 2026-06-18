@@ -1,4 +1,6 @@
-import { motion } from 'motion/react';
+"use client";
+import { fadeUp } from '@/animations/varients';
+import { motion } from 'framer-motion';
 import React from 'react'
 
  
@@ -15,7 +17,7 @@ const TechStack = () => {
   return (
     <section className='relative w-full py-10 overflow-hidden'>
 
-      <div className='relative z-10 max-w-6xl mx-auto h-full px-6 flex flex-col justify-center md:items-center gap-2'>
+      <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className='relative z-10 max-w-6xl mx-auto h-full px-6 flex flex-col justify-center md:items-center gap-2'>
 
         <div className="space-y-2">
           <p className="text-orange-500 uppercase tracking-widest md:text-center">Tech Stack</p>
@@ -35,7 +37,7 @@ const TechStack = () => {
 
 
         
-      </div>
+      </motion.div>
 
 
 
