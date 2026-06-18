@@ -174,7 +174,7 @@ const Projects = () => {
           </h2>
         </div>
 
-        <div className="flex gap-4 h-auto  flex-col md:flex-row">
+        <div className="flex gap-4 h-auto md:min-h-[320] flex-col md:flex-row">
           {featuredProjects.map((project) => (
             <motion.div
               key={project.id}
