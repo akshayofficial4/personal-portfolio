@@ -28,7 +28,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="YOUR_LINKEDIN"
+            href="https://www.linkedin.com/in/akshay-sunil7034/"
             target="_blank"
             className="hover:text-orange-500 transition-colors"
           >
