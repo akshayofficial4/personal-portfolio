@@ -36,8 +36,7 @@ const Hero = () => {
           animate="visible"
           className="text-zinc-400 text-xl mt-4 max-w-2xl md:text-center"
         >
-          I build modern, scalable web applications with clean UI and smooth
-          user experiences.
+          I build fast, animated web apps that feel premium — from landing pages to full-stack MERN products.
         </motion.p>
 
         <motion.div
