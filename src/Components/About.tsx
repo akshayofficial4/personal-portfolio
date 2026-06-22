@@ -30,13 +30,11 @@ const About = () => {
             <ScrollText
               className="text-zinc-400 leading-8 text-xl"
               text="
-                    I'm Akshay Sunil, a Full Stack Developer passionate about building modern,
-                    responsive, and scalable web applications using React.js, Next.js,
-                    Node.js, and MongoDB. I enjoy turning ideas into intuitive digital
-                    experiences and have built multiple full-stack projects that focus on
-                    performance, usability, and clean design. My goal is to create web
-                    applications that not only look great but also solve real business
-                    problems."
+                   I'm Akshay Sunil, a Full Stack Developer who helps startups, small businesses, and personal brands turn ideas into polished,
+                   production-ready web apps. I work across the full stack — React, Next.js, Node.js, MongoDB — but what sets my work apart is
+                   attention to motion and feel: smooth animations, fast load times, and interfaces that don't just function, they feel premium.
+                   Whether it's a landing page that needs to convert or a full-stack app that needs to scale,
+                   I build it clean, fast, and right."
             />
           </div>
           <div className="flex justify-center lg:justify-center ">
