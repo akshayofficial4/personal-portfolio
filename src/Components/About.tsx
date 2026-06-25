@@ -41,10 +41,10 @@ const About = () => {
             <Image
               src="/port-image2copy.jpeg"
               alt="Akshay Sunil"
-              width={0}
-              height={0}
+              width={288}
+              height={288}
               loading="eager"
-              sizes="100vw"
+              sizes="288px"
               className="
                       relative
                         w-72
