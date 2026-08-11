@@ -25,6 +25,11 @@ export const metadata = {
     "Next.js Developer",
     "MERN Stack Developer",
   ],
+
+  alternates: {
+    canonical: "https://www.akshaydev.in",
+  },
+  
   openGraph: {
     title: "Akshay Sunil | Full Stack Developer",
     description:
