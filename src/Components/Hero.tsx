@@ -27,7 +27,7 @@ const Hero = () => {
           animate="visible"
           className="text-white text-6xl md:text-7xl font-bold leading-tight"
         >
-          Hi, I’m Akshay Sunil
+          Hi, I’m Akshay
         </motion.h1>
 
         <motion.p
