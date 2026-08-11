@@ -11,6 +11,24 @@ import TechStack from "@/Components/TechStack";
 export default function Home() {
   return (
     <main className=" w-full ">
+
+      <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Akshay Sunil",
+            url: "https://akshaydev.in",
+            jobTitle: "Full Stack Developer",
+            sameAs: [
+              "https://github.com/akshayofficial4",
+              "https://www.linkedin.com/in/akshay-sunil7034/",
+            ],
+          }),
+        }}
+      />
+      
       {/* NAVBAR CONTAINER */}
       <div className="fixed top-0 left-0 w-full h-20 bg-gradient-to-b from-black via-black/90 to-transparent z-40" />
       <div className="fixed top-4 left-0 w-full z-50 px-4">
