@@ -14,11 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://akshaydev.in"),
   title: "Akshay Sunil | Full Stack Developer",
-
   description:
     "Full Stack Developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
-
   keywords: [
     "Akshay Sunil",
     "Full Stack Developer",
@@ -26,6 +25,22 @@ export const metadata = {
     "Next.js Developer",
     "MERN Stack Developer",
   ],
+  openGraph: {
+    title: "Akshay Sunil | Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
+    url: "https://akshaydev.in",
+    siteName: "Akshay Sunil",
+    images: ["/og-image.png"],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Akshay Sunil | Full Stack Developer",
+    description:
+      "Full Stack Developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
