@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://akshaydev.in"),
+  metadataBase: new URL("https://www.akshaydev.in"),
   title: "Akshay Sunil | Full Stack Developer",
   description:
     "Full Stack Developer specializing in React, Next.js, Node.js, Express.js and MongoDB.",
